@@ -1,0 +1,11 @@
+$base-width: 1000px;
+
+$color-pink: #EE859A;
+$color-black: #2A2A2A;
+
+$breakpoints: (
+    'sm': 'screen and (max-width: 480px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)',
+) !default;
