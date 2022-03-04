@@ -553,7 +553,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <footer>
             ©️2021 Food Loss Japan
         </footer>
-        <div v-if="popUp" class="popUp">
+        <div v-if="popUp" class="popUp" id="popUp" v-cloak>
             <img src="img/close.png" @click="popUp=!popUp" class="close">
             <h1 class="popUp-title">注文確認</h1>
             <img src="img/order-img.png" class="item-img">

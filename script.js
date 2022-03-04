@@ -382,6 +382,7 @@ const app = createApp({
         },
     },
     mounted() {
+        document.getElementById('popUp').style.display = 'block';
         let mySwiper = new Swiper('.swiper', {
             speed: 800,
             // 以下にオプションを設定
