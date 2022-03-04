@@ -90,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span>店先では買えない野菜のセットをお届けします</span><br> フードロスジャパン
                 </p>
                 <div class="Header__link--order">
-                    <a href="javascript:void(0)" @click="popUp=!popUp">
+                    <a href="javascript:void(0)" @click="openPopUp()">
                         <img src="img/header-img-order.png" alt="">
                         <p class="Header__link--txt">Order</p>
                     </a>
@@ -273,7 +273,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                             <div class="swiper-slide">
                                 <div class="c-Order__inner">
-                                    <h3 class="c-Order__head">わくわくロス野菜<br>15kgパック</h3>
+                                    <h3 class="c-Order__head">わくわくロス野菜<br>20kgパック</h3>
                                     <img src="img/order-img.png" alt="" class="c-Order__bi--pic1">
                                     <p class="c-Order__txt">
                                         頑張って一緒に大きくなったのに、一緒には<br> 店先に登場することなく、誰にも気づかれず、
@@ -351,7 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c-Order__inner">
-                                    <h3 class="c-Order__head">わくわくロス野菜<br>15kgパック</h3>
+                                    <h3 class="c-Order__head">わくわくロス野菜<br>20kgパック</h3>
                                     <img src="img/order-img.png" alt="" class="c-Order__bi--pic1">
                                     <p class="c-Order__txt">
                                         頑張って一緒に大きくなったのに、一緒には<br> 店先に登場することなく、誰にも気づかれず、
@@ -494,7 +494,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                             <div class="swiper-slide">
                                 <div class="c-Order__inner">
-                                    <h3 class="c-Order__head">わくわくロス野菜<br>15kgパック</h3>
+                                    <h3 class="c-Order__head">わくわくロス野菜<br>20kgパック</h3>
                                     <img src="img/order-img.png" alt="" class="c-Order__bi--pic1">
                                     <p class="c-Order__txt">
                                         頑張って一緒に大きくなったのに、一緒には<br> 店先に登場することなく、誰にも気づかれず、
@@ -553,7 +553,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <footer>
             ©️2021 Food Loss Japan
         </footer>
-        <div v-if="popUp" class="popUp">
+        <div v-if="popUp" class="popUp" id="popUp" v-cloak>
             <img src="img/close.png" @click="popUp=!popUp" class="close">
             <h1 class="popUp-title">注文確認</h1>
             <img src="img/order-img.png" class="item-img">
@@ -564,18 +564,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </li>
                 <li>
                     <div>送料一律</div>
-                    <div>{{ shipping_fee.toLocaleString() }}円</div>
+                    <div>{{ parseInt(shipping_fee, 10).toLocaleString() }}円</div>
 
                 </li>
             </ul>
             <ul class="price-list">
                 <li>
                     <div>小計</div>
-                    <div>{{ subtotal.toLocaleString() }}円</div>
+                    <div>{{ parseInt(subtotal, 10).toLocaleString() }}円</div>
                 </li>
                 <li>
                     <div>消費税</div>
-                    <div>{{ tax.toLocaleString() }}円</div>
+                    <div>{{ parseInt(tax, 10).toLocaleString() }}円</div>
 
                 </li>
             </ul>
@@ -588,14 +588,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="popUp-sub-title">パック</p>
             <div class="select_item">
                 <label v-for="(item, index) in kind_list" :key="index" :class="{'checked': item.id == kind}">
-                    <input class="visually-hidden" type="radio" name="kind" v-model="kind" :value="item.id" />
+                    <input class="visually-hidden" type="radio" name="kind" v-model="kind" :value="item.id" @change="resetCart()" />
                     {{ item.name }}
                 </label>
             </div>
             <p class="popUp-sub-title">配送頻度</p>
             <div class="select_item shipping_frequency">
                 <label v-for="(item, index) in shipping_frequency_list" :key="index" :class="{'checked': item.id == shipping_frequency}">
-                    <input class="visually-hidden" type="radio" name="kind" v-model="shipping_frequency" :value="item.id" />
+                    <input class="visually-hidden" type="radio" name="kind" v-model="shipping_frequency" :value="item.id" @change="resetCart()" />
                     {{ item.name }}
                 </label>
             </div>

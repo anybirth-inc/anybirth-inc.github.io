@@ -1205,6 +1205,7 @@ footer.inactive {
     max-width: 450px;
     margin: auto;
     overflow: scroll;
+    /* display: none; */
 }
 
 .close {
@@ -1344,4 +1345,8 @@ label.checked::after {
     color: white;
     text-align: center;
     margin-top: 40px;
+}
+
+[v-cloak] {
+    display: none;
 }
