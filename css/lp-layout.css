@@ -1350,3 +1350,7 @@ label.checked::after {
 [v-cloak] {
     display: none;
 }
+
+.mt-4 {
+    margin-top: 16px;
+}
