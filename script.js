@@ -16,7 +16,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 2,
                     price: 1700,
-                    shipping_fee: 611,
+                    shipping_fee: 600,
                     url: "https://buy.stripe.com/3cs01S6OV5Jefde9AY",
                 },
                 {
@@ -27,7 +27,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 2,
                     price: 1700,
-                    shipping_fee: 611,
+                    shipping_fee: 600,
                     url: "https://buy.stripe.com/fZe2a0flr6NifdefZn",
                 },
                 {
@@ -38,7 +38,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 4,
                     price: 1700,
-                    shipping_fee: 611,
+                    shipping_fee: 600,
                     url: "https://buy.stripe.com/9AQ2a0a179Zu3uwbJ8",
                 },
                 {
@@ -49,7 +49,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 4,
                     price: 1700,
-                    shipping_fee: 611,
+                    shipping_fee: 600,
                     url: "https://buy.stripe.com/4gwdSIa17gnS4yA14v",
                 },
                 {
@@ -60,7 +60,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 2,
                     price: 3400,
-                    shipping_fee: 1222,
+                    shipping_fee: 1200,
                     url: "https://buy.stripe.com/5kA15W0qx8Vq5CE28A",
                 },
                 {
@@ -71,7 +71,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 2,
                     price: 3400,
-                    shipping_fee: 1222,
+                    shipping_fee: 1200,
                     url: "https://buy.stripe.com/eVadSI7SZfjOe9aeVn",
                 },
                 {
@@ -82,7 +82,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 4,
                     price: 3400,
-                    shipping_fee: 1222,
+                    shipping_fee: 1200,
                     url: "https://buy.stripe.com/14k6qgc9f3B6c1200u",
                 },
                 {
@@ -93,7 +93,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 4,
                     price: 3400,
-                    shipping_fee: 1222,
+                    shipping_fee: 1200,
                     url: "https://buy.stripe.com/6oE2a0gpvb3ye9a28D",
                 },
                 {
@@ -104,7 +104,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 2,
                     price: 2700,
-                    shipping_fee: 713,
+                    shipping_fee: 700,
                     url: "https://buy.stripe.com/fZe8yoehn4Fac129B6",
                 },
                 {
@@ -115,7 +115,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 2,
                     price: 2700,
-                    shipping_fee: 713,
+                    shipping_fee: 700,
                     url: "https://buy.stripe.com/9AQ15W8X31sYfde14B",
                 },
                 {
@@ -126,7 +126,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 4,
                     price: 2700,
-                    shipping_fee: 713,
+                    shipping_fee: 700,
                     url: "https://buy.stripe.com/14kg0Q8X31sY6GIdRo",
                 },
                 {
@@ -137,7 +137,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 4,
                     price: 2700,
-                    shipping_fee: 713,
+                    shipping_fee: 700,
                     url: "https://buy.stripe.com/28o7uk8X37RmghibJh",
                 },
                 {
@@ -148,7 +148,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 2,
                     price: 5400,
-                    shipping_fee: 1426,
+                    shipping_fee: 1400,
                     url: "https://buy.stripe.com/4gw4i8a178Vq6GI28I",
                 },
                 {
@@ -159,7 +159,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 2,
                     price: 5400,
-                    shipping_fee: 1426,
+                    shipping_fee: 1400,
                     url: "https://buy.stripe.com/14k7uk2yF7Rm3uwdRr",
                 },
                 {
@@ -170,7 +170,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 4,
                     price: 5400,
-                    shipping_fee: 1426,
+                    shipping_fee: 1400,
                     url: "https://buy.stripe.com/3cs5mc5KR6Ni8OQ3cO",
                 },
                 {
@@ -181,7 +181,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 4,
                     price: 5400,
-                    shipping_fee: 1426,
+                    shipping_fee: 1400,
                     url: "https://buy.stripe.com/4gw8yoehn9Zue9adRt",
                 },
                 {
@@ -192,7 +192,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 2,
                     price: 4500,
-                    shipping_fee: 1018.5,
+                    shipping_fee: 1000,
                     url: "https://buy.stripe.com/8wM4i87SZefKd56fZC",
                 },
                 {
@@ -203,7 +203,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 2,
                     price: 4500,
-                    shipping_fee: 1018.5,
+                    shipping_fee: 1000,
                     url: "https://buy.stripe.com/3cs5mc6OVgnS7KMdRv",
                 },
                 {
@@ -214,7 +214,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 4,
                     price: 4500,
-                    shipping_fee: 1018.5,
+                    shipping_fee: 1000,
                     url: "https://buy.stripe.com/fZe7ukc9fc7CfdedRw",
                 },
                 {
@@ -225,7 +225,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 4,
                     price: 4500,
-                    shipping_fee: 1018.5,
+                    shipping_fee: 1000,
                     url: "https://buy.stripe.com/dR63e4c9f2x29SU00H",
                 },
                 {
@@ -236,7 +236,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 2,
                     price: 9000,
-                    shipping_fee: 2037,
+                    shipping_fee: 2000,
                     url: "https://buy.stripe.com/cN2bKAc9f3B6aWY28Q",
                 },
                 {
@@ -247,7 +247,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 2,
                     price: 9000,
-                    shipping_fee: 2037,
+                    shipping_fee: 2000,
                     url: "https://buy.stripe.com/28ocOEgpv9ZufdefZH",
                 },
                 {
@@ -258,7 +258,7 @@ const app = createApp({
                     shipping_day: "thursday",
                     shipping_day_turn: 4,
                     price: 9000,
-                    shipping_fee: 2037,
+                    shipping_fee: 2000,
                     url: "https://buy.stripe.com/00g3e44GN9Zuc1200K",
                 },
                 {
@@ -269,7 +269,7 @@ const app = createApp({
                     shipping_day: "friday",
                     shipping_day_turn: 4,
                     price: 9000,
-                    shipping_fee: 2037,
+                    shipping_fee: 2000,
                     url: "https://buy.stripe.com/28o5mc1uBefK9SUfZJ",
                 },
             ],
@@ -374,11 +374,14 @@ const app = createApp({
         subtotal: function() {
             return this.item.price + this.shipping_fee;
         },
-        tax: function() {
-            return this.subtotal * 0.08;
+        tax_08: function() {
+            return this.item.price * 0.08;
+        },
+        tax_10: function() {
+            return this.shipping_fee * 0.1;
         },
         total: function() {
-            return Math.round(this.subtotal + this.tax);
+            return Math.round(this.subtotal + this.tax_08 + this.tax_10);
         },
     },
     mounted() {

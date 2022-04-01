@@ -574,9 +574,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div>{{ parseInt(subtotal, 10).toLocaleString() }}円</div>
                 </li>
                 <li>
-                    <div>消費税</div>
-                    <div>{{ parseInt(tax, 10).toLocaleString() }}円</div>
-
+                    <div>消費税(8%)</div>
+                    <div>{{ parseInt(tax_08, 10).toLocaleString() }}円</div>
+                </li>
+                <li>
+                    <div>消費税(10%)</div>
+                    <div>{{ parseInt(tax_10, 10).toLocaleString() }}円</div>
                 </li>
             </ul>
             <ul class="price-list">
